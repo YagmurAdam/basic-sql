@@ -6,7 +6,9 @@ new sql(file_path);
 
 # file_path
 define from document root
+#
 default path : /service/connect.php
+#
 connect.php includes $host, $user, $pass and $db variables
 
 # constructor
@@ -53,8 +55,9 @@ set_charset($charset) => sets charset "SET CHARACTER SET $charset"
 
 # r
 r() => executes prepared query.
-
+#
 if use with true " r(true) " returns number of rows
+#
 if execute select statement returns an array
 
     array(
